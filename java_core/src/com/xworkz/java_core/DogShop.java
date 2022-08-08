@@ -25,7 +25,7 @@ public static void main(String[] args) {
 	DogShop s1 = new DogShop (5,"white");
 	//DogShop s2 = new DogShop();
 	s.petDetails();
-	s1.petDetails();
+	
 //	System.out.println(s.price);
 //	System.out.println(s.breed);
 //	System.out.println(s.origin);
