@@ -5,7 +5,7 @@ public class FinallyBlockDemo {
 		System.out.println("start");
 		
 		try {
-			System.out.println(10/0);
+			System.out.println(10/5);
 		}
 		
 		catch(ArithmeticException e)

@@ -10,8 +10,6 @@ public enum Dbproperties {
       private Dbproperties(String value) {
     	  this.value=value;
     	  
-    	  
-		
 	}
 
 	public String getValue() {
