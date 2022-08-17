@@ -9,7 +9,7 @@ import com.xworkz.hotel.entity.HotelEntity;
 public class HotelRunner {
 
 	public static void main(String[] args) {
-		
+
 		HotelEntity hotelentity = new HotelEntity();
 		hotelentity.setId(1);
 		hotelentity.setOwner("sharan");
@@ -20,16 +20,14 @@ public class HotelRunner {
 		hotelentity.setPrice(4000);
 		hotelentity.setLocation("BHATKAL");
 		hotelentity.setFood("CHICKEN BIRYANI");
-		
-		HotelDAO hoteldao = new HotelDAOImpl();
-	boolean save = 	hoteldao.save(hotelentity);
-	System.out.println(save);
-HotelEntity info =	hoteldao.findById(1);
-System.out.println(info);
 
-hoteldao.updateOwnerAndPriceById("sudhir", 20000, 1);
-		
-		
+		HotelDAO hoteldao = new HotelDAOImpl();
+		boolean save = hoteldao.save(hotelentity);
+		System.out.println(save);
+		HotelEntity info = hoteldao.findById(1);
+		System.out.println(info);
+
+		hoteldao.updateOwnerAndPriceById("sudhir", 20000, 1);
 
 	}
 
