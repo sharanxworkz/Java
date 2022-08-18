@@ -98,4 +98,28 @@ public class BusDAOImpl implements BusDAO {
 
 	}
 
+	@Override
+	public BusEntity findId(int id) {
+		EntityManager manager = null;
+		try {
+			 manager = factory.createEntityManager();
+			BusEntity entity =  manager.find(BusEntity.class, id);
+			 if(entity!=null) {
+				 System.out.println("entity found"+id);
+				 return entity;
+			 }
+			 else {
+				 System.out.println("entity not found"+id);
+			 }
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+			
+		}
+		finally {
+			manager.close();
+		}
+		return null;
+	}
+
 }

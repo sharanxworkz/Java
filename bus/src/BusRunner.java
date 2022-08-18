@@ -23,16 +23,18 @@ public class BusRunner {
 		BusDAO busdao = new BusDAOImpl();
 		
 		
-		boolean saved = busdao.save(busentity);
-		boolean save = busdao.save(busentity1);
-		System.out.println(saved);
-		System.out.println(save);
+	//	boolean saved = busdao.save(busentity);
+	//	boolean save = busdao.save(busentity1);
+	//	System.out.println(saved);
+	//	System.out.println(save);
 		
-		BusEntity detail = busdao.findById(1);
-		System.out.println(detail);
+	//	BusEntity detail = busdao.findById(1);
+	//	System.out.println(detail);
+		BusEntity info = busdao.findById(2);
+		System.out.println(info);
 		
-		busdao.updateNameAndLocationById("white", "mangalore", 1);
-		busdao.deleteById(2);
+	//	busdao.updateNameAndLocationById("white", "mangalore", 1);
+	//	busdao.deleteById(2);
 	}
 
 }
